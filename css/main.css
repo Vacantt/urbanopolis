@@ -1,0 +1,72 @@
+@charset "UTF-8";
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+footer, .navbar, .dropdown-menu, .card-header, .dropdown-item:hover {
+  background-color: #FCF0CC !important;
+}
+
+span, p, h1, h2, h3, h4, h5, h6, label, figcaption, .card-header {
+  color: #973688 !important;
+}
+
+a, button, .dropdown-item {
+  color: #973688 !important;
+  transition: color 0.25s ease-in-out;
+}
+a:hover, button:hover, .dropdown-item:hover {
+  color: rgba(151, 54, 136, 0.7176470588) !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.linija-gore {
+  border-top: 0.125em solid #973688;
+}
+
+.linija-dole {
+  border-bottom: 0.125em solid #973688;
+}
+
+.btn {
+  border: 1px solid #973688 !important;
+  background-color: #FCF0CC !important;
+  box-shadow: 0 3px 7px #973688;
+}
+
+input, textarea, select, .card {
+  border: 1px solid #973688 !important;
+}
+
+#map {
+  height: 300px;
+}
+
+.zelena {
+  background-color: #ACFCC0;
+}
+
+.zuta {
+  background-color: #E1D45F;
+}
+
+.crvena {
+  background-color: #EB9486;
+}
+
+img[src="img/urbanopolis.svg"] {
+  width: 150px; /* ŠIRINA LOGO URBANOPOLISA U NAVIGACIJI */
+}
+
+img[src^="img/prodavnice"] {
+  border: 1px solid #973688 !important;
+  border-radius: 5px;
+  filter: grayscale(1);
+  transition: filter 0.25s ease-in-out;
+}
+img[src^="img/prodavnice"]:hover {
+  filter: grayscale(0);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,18 @@
+img[src="img/urbanopolis.svg"] {
+  width: 150px; /* ŠIRINA LOGO URBANOPOLISA U NAVIGACIJI */
+}
+
+img[src^="img/prodavnice"] {
+  @include granica;
+  border-radius: 5px;
+  filter: grayscale(1);
+  transition: filter 0.25s ease-in-out;
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+img[src^="img/galerija"] {
+  @include granica;
+}

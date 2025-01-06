@@ -1,0 +1,66 @@
+@mixin tekst {
+  color: $tekstPurple !important;
+}
+
+@mixin granica {
+  border: 1px solid $tekstPurple !important;
+}
+
+footer, .navbar, .dropdown-menu, .card-header, .dropdown-item:hover {
+  background-color: $pozadinaZuta !important;
+}
+
+span, p, h1, h2, h3, h4, h5, h6, label, figcaption, .card-header {
+  @include tekst;
+}
+
+a, button, .dropdown-item {
+  @include tekst;
+  transition: color 0.25s ease-in-out;
+
+  &:hover {
+    color: $tekstPurpleHover !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.linija-gore {
+  border-top: 0.125em solid $tekstPurple;
+}
+
+.linija-dole {
+  border-bottom: 0.125em solid $tekstPurple;
+}
+
+.btn {
+  @include granica;
+  background-color: $pozadinaZuta !important;
+  box-shadow: 0 3px 7px $tekstPurple;
+}
+
+input, textarea, select, .card {
+  @include granica;
+}
+
+#map {
+  height: 300px;
+}
+
+.zelena {
+  background-color: #ACFCC0;
+}
+
+.zuta {
+  background-color: #E1D45F;
+}
+
+.crvena {
+  background-color: #EB9486;
+}
+
+#rezultat {
+  padding: 1em;
+}
